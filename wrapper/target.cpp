@@ -72,7 +72,7 @@ OSVersion Target::getSDKOSNum() const {
       return OSVersion();
 
     int n = atoi(target.c_str() + 6);
-    return OSVersion(10, 5);
+    return OSVersion(10, 4 + (n - 8));
   }
 }
 

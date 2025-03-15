@@ -182,10 +182,8 @@ for ARCH_TO_BUILD in $ARCHS_TO_BUILD; do
     --enable-lto \
     --enable-checking=release \
     --disable-libstdcxx-pch \
-    --disable-__cxa_atexit \
     --prefix=$OSXCROSS_TARGET_DIR \
     --with-system-zlib \
-    --without-long-double-128 \
     $EXTRA_CONFFLAGS
 
   $MAKE -j$JOBS
