@@ -72,7 +72,7 @@ OSVersion Target::getSDKOSNum() const {
       return OSVersion();
 
     int n = atoi(target.c_str() + 6);
-    return OSVersion(10, 4 + (n - 8));
+    return OSVersion(10, 5);
   }
 }
 
@@ -598,9 +598,6 @@ bool Target::setup() {
   if (OSNum > SDKOSNum) {
     err << "targeted OS X version must be <= " << SDKOSNum.Str() << " (SDK)"
         << err.endl();
-    return false;
-  } else if (OSNum < OSVersion(10, 4)) {
-    err << "targeted OS X version must be >= 10.4" << err.endl();
     return false;
   }
 

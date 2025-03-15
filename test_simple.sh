@@ -133,7 +133,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_FORTRAN}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       ./"${FFPROG01_SOURCE}" \
       -o ./"${FFPROG01_BINARY}" \
    && file ./"${FFPROG01_BINARY}" \
@@ -170,7 +170,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_FORTRAN}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       ./"${FFPROG02_SOURCE}" \
       -o ./"${FFPROG02_BINARY}" \
    && file ./"${FFPROG02_BINARY}" \
@@ -211,7 +211,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_CC}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       ./"${CCPROG01_SOURCE}" \
       -o ./"${CCPROG01_BINARY}" \
    && file ./"${CCPROG01_BINARY}" \
@@ -303,7 +303,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_CC}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       -std=c11 \
       ./"${CCPROG02_SOURCE}" \
       -o ./"${CCPROG02_BINARY}" \
@@ -348,7 +348,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_CXX}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       -std=c++03 \
       ./"${CXPROG01_SOURCE}" \
       -o ./"${CXPROG01_BINARY}" \
@@ -422,7 +422,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_CXX}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       -std=c++11 \
       ./"${CXPROG02_SOURCE}" \
       -o ./"${CXPROG02_BINARY}" \
@@ -464,7 +464,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_CXX}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       -std=c++11 \
       ./"${CXPROG03_SOURCE}" \
       -o ./"${CXPROG03_BINARY}" \
@@ -525,7 +525,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_CXX}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       -std=c++14 \
       ./"${CXPROG04_SOURCE}" \
       -o ./"${CXPROG04_BINARY}" \
@@ -648,7 +648,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_CXX}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       -std=c++14 \
       ./"${CXPROG05_SOURCE}" \
       -o ./"${CXPROG05_BINARY}" \
@@ -693,7 +693,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_CXX}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       -std=c++17 \
       ./"${CXPROG06_SOURCE}" \
       -o ./"${CXPROG06_BINARY}" \
@@ -776,7 +776,7 @@ EOF
    cd "${OSXCROSS_TEST_DIR}/" \
    && "${OSXCROSS_TEST_TOOLCHAIN_CXX}" \
       -O6 -Wall -g \
-      -static-libgcc \
+      -shared-libgcc \
       -std=c++17 \
       ./"${CXPROG07_SOURCE}" \
       -o ./"${CXPROG07_BINARY}" \
