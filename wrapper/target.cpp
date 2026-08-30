@@ -555,7 +555,8 @@ void Target::setupGCCLibs(Arch arch) {
   addLib(GCCLibSTDCXXPath, "stdc++");
   addLib(GCCLibSTDCXXPath, "supc++");
   addLib(GCCLibPath, "gcc");
-  addLib(GCCLibPath, "gcc_eh");
+  addLib(GCCLibPath, "heapt_w");
+  addLib(GCCLibPath, "emutls_w");
 
   fargs.push_back("-lc");
 
